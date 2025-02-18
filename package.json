@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.21.0",
     "@react-three/drei": "^9.121.5",
     "@react-three/fiber": "^9.0.0-alpha.8",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.4.3",
     "lucide-react": "^0.475.0",
