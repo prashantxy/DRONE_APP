@@ -191,14 +191,15 @@ export default function ChatBotRoute() {
           <div className="border-t pt-4 px-4">
             <div className="flex gap-2">
               <textarea
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                onKeyDown={handleKeyPress}
-                placeholder="Type your message..."
-                rows={1}
-                className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF7B5F] resize-none"
-                disabled={isLoading || isGenerating}
-              />
+  value={input}
+  onChange={(e) => setInput(e.target.value)}
+  onKeyDown={handleKeyPress}
+  placeholder="Type your message..."
+  rows={1}
+  className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF7B5F] resize-none text-black"
+  disabled={isLoading || isGenerating}
+/>
+
               {isGenerating ? (
                 <Button
                 onClick={handleStop}
